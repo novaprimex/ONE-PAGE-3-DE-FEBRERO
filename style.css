@@ -1,0 +1,221 @@
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: fantasy;
+  background-image: url("./img/film-stock-5974239_1280.jpg");
+  color: chocolate;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("./img/cinema-strip-64074_1280.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  color: rgb(14, 16, 181);
+  padding: 1rem;
+  
+}
+
+header nav ul {
+  list-style: none;
+  padding: 60px;
+}
+
+.logo {
+  font-family: fantasy;
+  float: left;
+  color: rgb(241, 230, 13);
+  padding: 10px;
+}
+header nav ul li {
+  display: inline;
+  float: right;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header nav ul li a {
+  align-items: center;
+  color: rgb(224, 16, 16);
+  text-decoration: none;
+}
+
+/* MAIN */
+main {
+  padding: 2rem;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+h2,
+p {
+  text-align: center;
+  color: rgb(97, 68, 68);
+}
+
+footer {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(219, 18, 18);
+}
+/* FORMULARIO */
+form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+label {
+  color: rgb(107, 102, 102);
+}
+
+.boton {
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #007bff;
+  padding: 10px;
+}
+
+input,
+textarea {
+  display: flex;
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #726412;
+  color: white;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+/* Movie List */
+#movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#movie-list div {
+  width: 200px;
+
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+  background: #f1ed0b;
+  width: 200px;
+  text-align: center;
+}
+/* Estilo para los elementos de películas */
+#movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-item {
+  width: 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f22905;
+  transition: transform 0.3s ease;
+}
+
+.movie-item:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+/* Botón de tráiler */
+.trailer-btn {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.trailer-btn:hover {
+  background: #726412;
+}
+
+/* Contenedor del tráiler */
+.trailer-container {
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+/* Estilo del modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Contenido del modal */
+.modal-content {
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: center;
+}
+
+/* Botón de cerrar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
